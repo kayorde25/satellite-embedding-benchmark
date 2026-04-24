@@ -1,0 +1,23 @@
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data processing
+numpy>=1.23.0
+pandas>=1.5.0
+
+# Visualization
+matplotlib>=3.6.0
+
+# Machine learning
+scikit-learn>=1.2.0
+
+# Dimensionality reduction
+umap-learn>=0.5.3
+
+# Density-based clustering
+hdbscan>=0.8.29
+
+# Notebook environment (optional but recommended)
+jupyter>=1.0.0
+notebook>=6.5.0
