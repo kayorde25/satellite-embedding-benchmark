@@ -21,3 +21,11 @@ hdbscan>=0.8.29
 # Notebook environment (optional but recommended)
 jupyter>=1.0.0
 notebook>=6.5.0
+
+#How to use
+pip install -r requirements.txt
+
+#To run
+git add requirements.txt
+git commit -m "Add requirements for embedding benchmark pipeline"
+git push
