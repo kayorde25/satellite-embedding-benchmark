@@ -1,6 +1,6 @@
 # 🌍 Satellite Image Embedding Benchmarking and Clustering
 
-## 📌 Overview
+## Overview
 This project explores how pretrained computer vision models can be used to extract **embeddings from satellite imagery** and group similar image tiles using **unsupervised learning**.
 
 The goal is to move beyond traditional supervised classification and build a **reproducible evaluation pipeline** for:
@@ -13,7 +13,7 @@ The goal is to move beyond traditional supervised classification and build a **r
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Convert satellite images into vector representations (embeddings)
 - Compare pretrained models on representation quality
@@ -23,7 +23,7 @@ The goal is to move beyond traditional supervised classification and build a **r
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 This project uses the **EuroSAT dataset**, derived from Sentinel-2 satellite imagery.
 
@@ -42,7 +42,7 @@ This project uses the **EuroSAT dataset**, derived from Sentinel-2 satellite ima
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
 ### 1. Embedding Extraction
 Images are passed through pretrained CNNs with classification heads removed:
@@ -89,9 +89,9 @@ Two clustering methods are compared:
 
 ---
 
-## 📊 Model Comparison: ResNet50 vs EfficientNet-B0
+## Model Comparison: ResNet50 vs EfficientNet-B0
 
-### 🔍 Why Compare These Models?
+### Why Compare These Models?
 
 | Model | Strength |
 |------|--------|
@@ -100,7 +100,7 @@ Two clustering methods are compared:
 
 ---
 
-## 📈 Benchmark Results
+## Benchmark Results
 
 | Model | Clustering | ARI | NMI | Silhouette | Notes |
 |------|------------|-----|-----|------------|------|
@@ -113,7 +113,7 @@ Two clustering methods are compared:
 
 ---
 
-## 📊 Visual Results
+## Visual Results
 
 ### ResNet50
 
@@ -129,7 +129,7 @@ Two clustering methods are compared:
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 
 - EfficientNet often produces **more compact and separable embeddings**
 - HDBSCAN outperforms KMeans in:
@@ -140,7 +140,7 @@ Two clustering methods are compared:
 
 ---
 
-## ⚠️ Why HDBSCAN is Often Superior
+## Why HDBSCAN is Often Superior
 
 HDBSCAN is better suited for real-world satellite data because:
 
@@ -149,13 +149,12 @@ HDBSCAN is better suited for real-world satellite data because:
 - identifies ambiguous samples as noise  
 - adapts to complex embedding structures  
 
-👉 This is critical for satellite imagery, where regions are often mixed or transitional.
+This is critical for satellite imagery, where regions are often mixed or transitional.
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
-.
 ├── README.md
 ├── requirements.txt
 ├── notebooks/
@@ -172,12 +171,12 @@ HDBSCAN is better suited for real-world satellite data because:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 pip install -r requirements.txt
 
-🚀 Usage
+Usage
 
 Run the notebook in:
 
@@ -189,7 +188,7 @@ Run all cells
 View results
 Export figures and tables
 
-📁 Outputs
+Outputs
 Figures
 UMAP cluster plots
 True-label comparison plots
@@ -204,14 +203,14 @@ CNN baseline: Plant Seedling Classification
 LLM system: DataPilot-AI
 
 
-🚀 Future Work
+Future Work
 Add Vision Transformers (ViT / CLIP)
 Implement embedding fusion across models
 Apply to real GeoTIFF satellite datasets
 Build change detection pipeline
 Add spatial clustering and geospatial mapping
 
-🎯 Conclusion
+Conclusion
 
 This project demonstrates how embedding-based workflows can be used to:
 
@@ -219,7 +218,7 @@ discover structure in satellite imagery
 evaluate pretrained models without supervision
 build scalable pipelines for Earth observation
 
-👉 It provides a foundation for:
+It provides a foundation for:
 similarity search
 anomaly detection
 change detection
