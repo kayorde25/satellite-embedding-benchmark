@@ -154,3 +154,74 @@ HDBSCAN is better suited for real-world satellite data because:
 ---
 
 ## 🗂️ Repository Structure
+
+.
+├── README.md
+├── requirements.txt
+├── notebooks/
+│ ├── satellite_embedding_benchmark.ipynb
+│ └── resnet_vs_efficientnet.ipynb
+│
+├── outputs/
+│ ├── figures/
+│ └── tables/
+│
+└── docs/
+└── methodology.md
+
+
+---
+
+## ⚙️ Installation
+
+```bash
+pip install -r requirements.txt
+
+🚀 Usage
+
+Run the notebook in:
+
+Google Colab or Jupyter
+
+Steps:
+Open notebook
+Run all cells
+View results
+Export figures and tables
+
+📁 Outputs
+Figures
+UMAP cluster plots
+True-label comparison plots
+Tables
+
+Model comparison results
+Cluster assignments
+
+🔗 Related Projects
+NLP benchmarking: Twitter Sentiment Analysis
+CNN baseline: Plant Seedling Classification
+LLM system: DataPilot-AI
+
+
+🚀 Future Work
+Add Vision Transformers (ViT / CLIP)
+Implement embedding fusion across models
+Apply to real GeoTIFF satellite datasets
+Build change detection pipeline
+Add spatial clustering and geospatial mapping
+
+🎯 Conclusion
+
+This project demonstrates how embedding-based workflows can be used to:
+
+discover structure in satellite imagery
+evaluate pretrained models without supervision
+build scalable pipelines for Earth observation
+
+👉 It provides a foundation for:
+similarity search
+anomaly detection
+change detection
+large-scale geospatial analysis
+
